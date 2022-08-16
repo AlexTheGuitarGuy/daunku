@@ -1,5 +1,6 @@
 import Logo from './Logo/Logo'
 import Navbar from './Navbar/Navbar'
+import ShoppingButton from './ShoppingButton/ShoppingButton'
 
 const Header = () => {
 	return (
@@ -22,14 +23,10 @@ const Header = () => {
 					bg-gradient-to-b from-transparent to-white
 					z-20'
 			></div>
-			<header
-				className='pt-10 relative 
-						flex flex-row justify-around
-						z-30'
-			>
+			<header className='pt-10 relative z-30 grid grid-cols-3'>
 				<Logo />
 				<Navbar />
-				<span>Shopping</span>
+				<ShoppingButton />
 			</header>
 		</div>
 	)
