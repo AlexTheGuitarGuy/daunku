@@ -7,10 +7,17 @@ import LandingPage from './components/LandingPage/LandingPage'
 
 const App = () => {
   return (
-    <div>
+    <div
+      className='
+      relative bg-white
+      w-full
+      h-[5252px]
+      flex mx-auto
+      '
+    >
       <Routes>
-        <Route path='/landing-page' element={<LandingPage />} />
-        <Route path='/' element={<Navigate to='/landing-page' />} />
+        <Route path='/home/*' element={<LandingPage />} />
+        <Route path='/' element={<Navigate to='/home' />} />
       </Routes>
     </div>
   )
