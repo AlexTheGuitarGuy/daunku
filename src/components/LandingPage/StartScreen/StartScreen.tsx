@@ -2,7 +2,7 @@ import Logo from './Logo/Logo'
 import Navbar from './Navbar/Navbar'
 import ShoppingButton from './ShoppingButton/ShoppingButton'
 
-const Header = () => {
+const StartScreen = () => {
 	return (
 		<div className='w-full h-screen relative'>
 			<img
@@ -32,4 +32,4 @@ const Header = () => {
 	)
 }
 
-export default Header
+export default StartScreen

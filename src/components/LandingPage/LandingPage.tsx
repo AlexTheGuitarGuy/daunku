@@ -1,9 +1,9 @@
-import Header from './Header/Header'
+import StartScreen from './StartScreen/StartScreen'
 
 const LandingPage = () => {
 	return (
 		<div className='relative w-full'>
-			<Header />
+			<StartScreen />
 		</div>
 	)
 }
