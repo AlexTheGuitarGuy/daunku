@@ -20,7 +20,11 @@ const SearchBar = () => {
 				flex justify-center items-center
 				pointer-events-none'
 			>
-				<img src={require('../../../../assets/search-icon.png')} alt='search' className='w-7 h-7' />
+				<img
+					src={require('../../../../assets/common/search-icon.png')}
+					alt='search'
+					className='w-7 h-7'
+				/>
 			</div>
 		</div>
 	)

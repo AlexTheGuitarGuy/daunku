@@ -2,7 +2,7 @@ const Background = () => {
 	return (
 		<>
 			<img
-				src={require('../../../../assets/home-page-bg.png')}
+				src={require('../../../../assets/start-page/home-page-bg.png')}
 				alt='background'
 				className='
 					absolute
@@ -15,7 +15,7 @@ const Background = () => {
 					absolute 
 					h-48
 					w-full 
-					bottom-0
+					-bottom-1
 					bg-gradient-to-b from-transparent to-white
 					z-20'
 			></div>

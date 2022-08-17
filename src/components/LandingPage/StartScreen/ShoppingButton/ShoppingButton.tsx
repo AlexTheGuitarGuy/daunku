@@ -3,7 +3,7 @@ const ShoppingButton = () => {
 		<span className='flex justify-end my-auto mr-10'>
 			<button className='relative'>
 				<img
-					src={require('../../../../assets/shopping-icon.png')}
+					src={require('../../../../assets/start-page/shopping-icon.png')}
 					alt='shopping'
 					className='w-9 h-10'
 				/>

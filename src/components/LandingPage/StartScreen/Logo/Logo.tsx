@@ -3,7 +3,11 @@ import { NavLink } from 'react-router-dom'
 const Logo = () => {
 	return (
 		<span className='flex cursor-pointer ml-10'>
-			<img src={require('../../../../assets/logo.png')} alt='logo' className='w-12 h-12' />
+			<img
+				src={require('../../../../assets/start-page/logo.png')}
+				alt='logo'
+				className='w-12 h-12'
+			/>
 
 			<span
 				className='font-bold text-3xl

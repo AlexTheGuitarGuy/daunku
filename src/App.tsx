@@ -12,7 +12,7 @@ const App = () => {
       relative bg-white
       text-white
       w-full
-      h-[5252px]
+      h-fit
       flex mx-auto
       '
     >
