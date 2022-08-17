@@ -40,7 +40,10 @@ const StartScreen = () => {
 				</div>
 
 				<CustomInput placeholder='Search plant' className='mx-auto w-1/5 mt-10 '>
-					<div className='w-14 h-14 flex justify-center items-center'>
+					<div
+						className='w-14 h-14 
+									flex justify-center items-center'
+					>
 						<img
 							src={require('../../../assets/common/search-icon.png')}
 							alt='search'

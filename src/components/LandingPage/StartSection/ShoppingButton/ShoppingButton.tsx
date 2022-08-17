@@ -7,7 +7,7 @@ const ShoppingButton = () => {
 
 	return (
 		<span className='flex justify-end my-auto mr-10'>
-			<button className='relative'>
+			<button className='relative hover:animate-bounce'>
 				<img
 					src={require('../../../../assets/start-page/shopping-icon.png')}
 					alt='shopping'

@@ -61,9 +61,17 @@ const Product: FC<ProductProps> = ({ name }) => {
 				<div className='flex justify-between items-end'>
 					<div className='text-3xl text-gray-900 my-auto'>$65.00</div>
 					<div
-						className={cn('rounded-full bg-gray-300', {
-							'bg-gradient-to-r from-teal-400 to-blue-500': !isItemAdded,
-						})}
+						className={cn(
+							`rounded-full bg-gray-300 cursor-pointer 
+							 active:opacity-40 
+							transition-opacity transition-colors`,
+							{
+								'bg-gradient-to-r from-teal-400 to-blue-500 hover:opacity-70': !isItemAdded,
+							},
+							{
+								'hover:bg-red-500': isItemAdded,
+							},
+						)}
 						onClick={handleCartAction}
 					>
 						<img

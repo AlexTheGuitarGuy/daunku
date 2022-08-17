@@ -15,6 +15,8 @@ const Logo = () => {
 						transition-colors
 			            bg-clip-text
 			            fill-transparent
+			            font-inter
+
 						hover:text-transparent 
 						hover:bg-gradient-to-tr 
 						hover:from-teal-400 hover:to-blue-500'

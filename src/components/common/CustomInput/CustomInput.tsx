@@ -25,7 +25,8 @@ const CustomInput: FC<CustomInputProps> = ({ placeholder, children, className })
 				className='absolute right-3 top-3 rounded-full 
 							bg-gradient-to-r from-teal-400 to-blue-500
 							text-center
-							cursor-pointer'
+							cursor-pointer
+							hover:opacity-70 active:opacity-40 transition-opacity'
 			>
 				{children}
 			</div>
