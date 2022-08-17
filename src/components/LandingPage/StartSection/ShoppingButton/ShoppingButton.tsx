@@ -1,4 +1,10 @@
+import { useSelector } from 'react-redux'
+import { getCartItems } from '../../../../redux/shopping-cart-selector'
+
 const ShoppingButton = () => {
+	const cartItems = useSelector(getCartItems)
+	const numberOfItems = cartItems.length
+
 	return (
 		<span className='flex justify-end my-auto mr-10'>
 			<button className='relative'>
@@ -13,7 +19,7 @@ const ShoppingButton = () => {
 				absolute top-0 -right-2
 				text-center'
 				>
-					<div className='text-sm text-black mt-0.5'>1</div>
+					<div className='text-sm text-black mt-0.5'>{numberOfItems}</div>
 				</div>
 			</button>
 		</span>

@@ -1,9 +1,11 @@
 import { applyMiddleware, combineReducers, compose, createStore } from 'redux'
 import thunkMiddleware from 'redux-thunk'
 import navbarReducer from './navbar-reducer'
+import shoppingCartReducer from './shopping-cart-reducer'
 
 const reducers = combineReducers({
   navbar: navbarReducer,
+  shoppingCart: shoppingCartReducer,
 })
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
