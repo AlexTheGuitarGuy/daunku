@@ -20,15 +20,16 @@ const Navbar = () => {
 					className={cn(
 						`
 			            transition-colors
-			            text-xl 
+			            text-2xl 
 			            bg-clip-text
-			            fill-transparent		
+			            fill-transparent
 			            `,
 						{
-							'font-bold text-transparent bg-gradient-to-tr from-teal-400 to-blue-500': isActive,
+							'font-bold text-transparent bg-gradient-to-r from-teal-400 to-blue-500': isActive,
 						},
 						{
-							'text-white': !isActive,
+							'hover:text-transparent hover:bg-gradient-to-r hover:from-teal-400 hover:to-blue-500':
+								!isActive,
 						},
 					)}
 				>

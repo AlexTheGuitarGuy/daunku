@@ -1,33 +1,45 @@
 import Logo from './Logo/Logo'
 import Navbar from './Navbar/Navbar'
 import ShoppingButton from './ShoppingButton/ShoppingButton'
+import Background from './Background/Background'
+import SearchBar from './SearchBar/SearchBar'
+import SelectCircle from './SelectCircle/SelectCircle'
 
 const StartScreen = () => {
 	return (
 		<div className='w-full h-screen relative'>
-			<img
-				src={require('../../../assets/home-page-bg.png')}
-				alt='background'
-				className='
-					absolute
-					top-0
-					w-full h-screen 
-					z-10'
-			/>
-			<div
-				className='
-					absolute 
-					h-48
-					w-full 
-					bottom-0
-					bg-gradient-to-b from-transparent to-white
-					z-20'
-			></div>
-			<header className='pt-10 relative z-30 grid grid-cols-3'>
-				<Logo />
-				<Navbar />
-				<ShoppingButton />
-			</header>
+			<Background />
+			<div className='absolute bottom-[450px] right-[175px] z-40'>
+				<SelectCircle price={'$65.00'} name='Dracena Fragnas' />
+			</div>
+			<div className='absolute bottom-[640px] left-40 z-40'>
+				<SelectCircle />
+			</div>
+			<div className='absolute bottom-[450px] left-64 z-40'>
+				<SelectCircle />
+			</div>
+			<div className='relative z-30 w-full'>
+				<header className='pt-10 grid grid-cols-3'>
+					<Logo />
+					<Navbar />
+					<ShoppingButton />
+				</header>
+				<div
+					className='mx-auto text-center 
+						font-bold text-8xl
+						mt-16 w-2/3'
+				>
+					Bring Serenity to Your Place With Interior Plants
+				</div>
+				<div
+					className='mx-auto text-center
+						text-2xl leading-8
+						mt-10 w-1/4'
+				>
+					find your dream plant for you home decoration with us, and we will make it happen.
+				</div>
+				<SearchBar />
+			</div>
 		</div>
 	)
 }

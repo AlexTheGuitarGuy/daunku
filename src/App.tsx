@@ -10,6 +10,7 @@ const App = () => {
     <div
       className='
       relative bg-white
+      text-white
       w-full
       h-[5252px]
       flex mx-auto
