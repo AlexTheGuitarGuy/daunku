@@ -2,13 +2,33 @@ import { FC } from 'react'
 
 type Icon = 'shipping' | 'payment' | 'customer-support'
 
-type ServiceProps = {
-	icon: Icon
+type ServiceMapItem = {
 	text: string
 	description: string
 }
 
-const Service: FC<ServiceProps> = ({ icon, text, description }) => {
+type ServiceProps = {
+	icon: Icon
+}
+
+const Service: FC<ServiceProps> = ({ icon }) => {
+	const serviceMap = {
+		shipping: {
+			text: 'Free Shipping',
+			description: 'No charge for each delivery',
+		} as ServiceMapItem,
+		payment: {
+			text: 'Quick Payment',
+			description: '100% secure payment',
+		} as ServiceMapItem,
+		'customer-support': {
+			text: '24/7 Support',
+			description: 'Quick support',
+		} as ServiceMapItem,
+	}
+
+	const { text, description } = serviceMap[icon]
+
 	return (
 		<div className='flex mx-auto'>
 			<img src={require(`../../../../assets/service-icons/${icon}.png`)} alt={text} />

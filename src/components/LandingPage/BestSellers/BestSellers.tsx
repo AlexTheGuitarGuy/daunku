@@ -5,12 +5,12 @@ const BestSellers = () => {
 	return (
 		<div
 			className='w-full h-screen relative 
-		flex justify-between flex-col'
+						flex flex-col justify-between'
 		>
 			<div className='grid grid-cols-3 pt-10'>
-				<Service icon='shipping' text='Free Shipping' description='No charge for each delivery' />
-				<Service icon='payment' text='Quick Payment' description='100% secure payment' />
-				<Service icon='customer-support' text='24/7 Support' description='Quick support' />
+				<Service icon='shipping' />
+				<Service icon='payment' />
+				<Service icon='customer-support' />
 			</div>
 			<div className='flex mx-80 mb-60'>
 				<div className='flex flex-col justify-center'>
@@ -23,9 +23,9 @@ const BestSellers = () => {
 					</div>
 				</div>
 				<div className='flex'>
-					<Product name={'camille-plant'} />
-					<Product name={'peace-lily'} />
-					<Product name={'snake-plant'} />
+					<Product name='camille-plant' />
+					<Product name='peace-lily' />
+					<Product name='snake-plant' />
 				</div>
 			</div>
 		</div>

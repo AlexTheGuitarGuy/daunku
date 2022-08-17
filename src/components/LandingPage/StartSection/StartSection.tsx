@@ -7,15 +7,15 @@ import SelectCircle from './SelectCircle/SelectCircle'
 
 const StartScreen = () => {
 	return (
-		<div className='w-full h-screen relative'>
+		<div className='w-full h-screen relative text-white'>
 			<Background />
 			<div className='absolute bottom-[450px] right-[175px] z-40'>
 				<SelectCircle price={'$65.00'} name='Dracena Fragnas' />
 			</div>
-			<div className='absolute bottom-[640px] left-40 z-40'>
+			<div className='absolute bottom-[800px] left-40 z-40'>
 				<SelectCircle />
 			</div>
-			<div className='absolute bottom-[450px] left-64 z-40'>
+			<div className='absolute bottom-[550px] left-64 z-40'>
 				<SelectCircle />
 			</div>
 			<div className='relative z-30 w-full'>

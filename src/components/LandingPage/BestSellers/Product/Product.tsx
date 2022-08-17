@@ -7,6 +7,12 @@ type ProductProps = {
 }
 
 const Product: FC<ProductProps> = ({ name }) => {
+	const speciesMap = {
+		'camille-plant': 'Cammile',
+		'peace-lily': 'Peace Lily',
+		'snake-plant': 'Snake Plant',
+	}
+
 	return (
 		<div className='bg-blue-200 rounded-t-[50px] h-full w-[330px] ml-16'>
 			<img
@@ -19,7 +25,7 @@ const Product: FC<ProductProps> = ({ name }) => {
 			  p-10 rounded-t-[50px] h-3/4'
 			>
 				<div className='text-3xl text-gray-900 font-semibold'>
-					Cammile
+					{speciesMap[name]}
 					<div className='flex mt-2'>
 						<span className='mr-1.5'>
 							<img src={require('../../../../assets/common/rating-star.png')} alt='star' />

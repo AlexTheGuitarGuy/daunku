@@ -1,11 +1,13 @@
-import StartScreen from './StartScreen/StartScreen'
+import StartSection from './StartSection/StartSection'
 import BestSellers from './BestSellers/BestSellers'
+import Reference from './Reference/Reference'
 
 const LandingPage = () => {
 	return (
 		<div className='relative w-full'>
-			<StartScreen />
+			<StartSection />
 			<BestSellers />
+			<Reference />
 		</div>
 	)
 }
