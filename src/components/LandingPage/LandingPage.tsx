@@ -1,6 +1,7 @@
 import StartSection from './StartSection/StartSection'
 import BestSellers from './BestSellers/BestSellers'
 import Reference from './Reference/Reference'
+import Footer from './Footer/Footer'
 
 const LandingPage = () => {
 	return (
@@ -8,6 +9,7 @@ const LandingPage = () => {
 			<StartSection />
 			<BestSellers />
 			<Reference />
+			<Footer />
 		</div>
 	)
 }

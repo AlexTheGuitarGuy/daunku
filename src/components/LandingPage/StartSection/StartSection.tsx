@@ -2,8 +2,8 @@ import Logo from './Logo/Logo'
 import Navbar from './Navbar/Navbar'
 import ShoppingButton from './ShoppingButton/ShoppingButton'
 import Background from './Background/Background'
-import SearchBar from './SearchBar/SearchBar'
 import SelectCircle from './SelectCircle/SelectCircle'
+import CustomInput from '../../common/CustomInput/CustomInput'
 
 const StartScreen = () => {
 	return (
@@ -38,7 +38,16 @@ const StartScreen = () => {
 				>
 					find your dream plant for you home decoration with us, and we will make it happen.
 				</div>
-				<SearchBar />
+
+				<CustomInput placeholder='Search plant' className='mx-auto w-1/5 mt-10 '>
+					<div className='w-14 h-14 flex justify-center items-center'>
+						<img
+							src={require('../../../assets/common/search-icon.png')}
+							alt='search'
+							className='w-7 h-7'
+						/>
+					</div>
+				</CustomInput>
 			</div>
 		</div>
 	)

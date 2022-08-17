@@ -11,7 +11,6 @@ const App = () => {
       className='
       relative bg-white
       w-full
-      h-fit
       flex mx-auto
       '
     >

@@ -15,27 +15,28 @@ const Navbar = () => {
 		let isActive = false
 		if (location.pathname.match(element.to)) isActive = true
 		return (
-			<NavLink key={element.id} to={element.to} className='mx-3 px-3 py-2'>
-				<div
-					className={cn(
-						`
+			<div
+				key={element.id}
+				className={cn(
+					`
 			            transition-colors
 			            text-2xl 
 			            bg-clip-text
 			            fill-transparent
 			            `,
-						{
-							'font-bold text-transparent bg-gradient-to-r from-teal-400 to-blue-500': isActive,
-						},
-						{
-							'hover:text-transparent hover:bg-gradient-to-r hover:from-teal-400 hover:to-blue-500':
-								!isActive,
-						},
-					)}
-				>
+					{
+						'font-bold text-transparent bg-gradient-to-r from-teal-400 to-blue-500': isActive,
+					},
+					{
+						'hover:text-transparent hover:bg-gradient-to-r hover:from-teal-400 hover:to-blue-500':
+							!isActive,
+					},
+				)}
+			>
+				<NavLink to={element.to} className='mx-3 px-3 py-2'>
 					{element.text}
-				</div>
-			</NavLink>
+				</NavLink>
+			</div>
 		)
 	})
 
