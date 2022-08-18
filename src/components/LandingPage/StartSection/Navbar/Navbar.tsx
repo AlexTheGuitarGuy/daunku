@@ -80,7 +80,7 @@ const Navbar = () => {
 			                rounded-b-xl
 			                font-semibold
 			                transition-opacity`,
-							{ 'opacity-0': !shouldShowMenu },
+							{ 'opacity-0 pointer-events-none': !shouldShowMenu },
 							{ 'opacity-100': shouldShowMenu },
 						)}
 						ref={menuRef as RefObject<HTMLDivElement>}

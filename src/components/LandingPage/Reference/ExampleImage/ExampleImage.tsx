@@ -14,9 +14,9 @@ const ExampleImage: FC<ExampleImageProps> = ({ image }) => {
 	}
 
 	return (
-		<div className='bg-black rounded-[52px] flex justify-center items-center cursor-pointer'>
+		<div className='bg-black lg:rounded-[52px] rounded-[30px] flex justify-center items-center cursor-pointer'>
 			<div
-				className='font-semibold text-6xl text-white 
+				className='font-semibold lg:text-6xl text-3xl text-white 
 											absolute z-10 pointer-events-none'
 			>
 				{imageMap[image]}
