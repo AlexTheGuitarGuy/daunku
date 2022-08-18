@@ -29,23 +29,22 @@ const Product: FC<ProductProps> = ({ name }) => {
 
 	return (
 		<div
-			className='bg-blue-200 rounded-t-[50px] h-full 
-		2xl:w-[330px] 2xl:h-[510px] 
-		xl:w-[280px] xl:h-[400px] 
-		lg:w-[200px] lg:h-[300px] 
-		lg:ml-16'
+			className='bg-blue-200 rounded-t-[50px] 
+											md:h-auto 
+											md:w-60 lg:w-auto 
+											mx-auto lg:mx-0'
 		>
 			<img
 				src={require(`../../../../assets/products/${name}.png`)}
 				alt={name}
-				className='lg:-mt-36 lg:mb-10 -mt-20 mb-6'
+				className='lg:-mt-36 lg:mb-10 -mt-20 mb-6 lg:w-80 lg:h-80 '
 			/>
 			<div
 				className='bg-white flex flex-col justify-between
-			  p-10 rounded-t-[50px] h-3/4'
+			  p-10 rounded-t-[50px] lg:h-80 h-72'
 			>
-				<div className='xl:text-4xl lg:text-2xl text-xl text-gray-900 font-semibold'>
-					{speciesMap[name]}
+				<div className='xl:text-4xl lg:text-2xl text-xl text-gray-900 font-semibold lg:items-end items-center'>
+					<div className='lg:h-12'>{speciesMap[name]}</div>
 					<div className='flex mt-2'>
 						<span className='mr-1.5'>
 							<img src={require('../../../../assets/common/rating-star.png')} alt='star' />

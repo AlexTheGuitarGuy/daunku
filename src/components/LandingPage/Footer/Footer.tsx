@@ -5,16 +5,16 @@ const Footer = () => {
 	return (
 		<div
 			className='bg-gradient-to-r from-slate-500 to-slate-800 text-white 
-						px-24 py-32'
+						md:px-24 py-32'
 		>
 			<div
 				className='flex flex-col lg:flex-row lg:items-end lg:justify-between 
 							border-b border-white pb-20'
 			>
-				<div className='flex flex-col 2xl:w-1/5 lg:w-2/5 lg:mr-48 mb-6 lg:mb-0'>
+				<div className='flex flex-col 2xl:w-1/5 lg:w-2/5 lg:mr-48 mb-6 lg:mb-0 mx-8 '>
 					<div className='xl:text-5xl text-3xl text-center lg:text-start'>Newsletter</div>
-					<CustomInput placeholder='Enter your email' className='w-full mt-10'>
-						<div className='lg:text-xl xl:w-36 lg:h-14 w-24 h-12 flex justify-center items-center'>
+					<CustomInput placeholder='Enter your email' className='w-full  mt-10'>
+						<div className='break-words lg:text-xl text-m xl:w-36 lg:w-28 md:w-24 w-20 lg:h-14 h-12 flex justify-center items-center'>
 							Subscribe
 						</div>
 					</CustomInput>

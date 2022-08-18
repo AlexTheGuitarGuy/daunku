@@ -31,17 +31,17 @@ const StartScreen = () => {
 					>
 						<SelectCircle />
 					</div>
+
+					<div
+						className='absolute z-30 
+			2xl:bottom-[450px] 2xl:right-[175px]
+			lg:bottom-[275px] lg:right-[80px]'
+					>
+						<SelectCircle price={'$65.00'} name='Dracena Fragnas' />
+					</div>
 				</>
 			)}
 
-			<div
-				className='absolute z-30 
-			2xl:bottom-[450px] 2xl:right-[175px]
-			lg:bottom-[275px] right-[80px]
-			bottom-[140px]'
-			>
-				<SelectCircle price={'$65.00'} name='Dracena Fragnas' />
-			</div>
 			<div className='relative z-40 w-full xl:space-y-24 sm:space-y-24 lg:space-y-10'>
 				<header className='pt-10 grid grid-cols-3'>
 					<span className='order-2 lg:order-1'>
@@ -61,7 +61,8 @@ const StartScreen = () => {
 						lg:text-5xl
 						text-3xl
 						lg:w-2/3
-						leading-6'
+						mx-10 lg:mx-auto
+						leading-10'
 				>
 					Bring Serenity to Your Place With Interior Plants
 				</div>
@@ -75,25 +76,26 @@ const StartScreen = () => {
 					find your dream plant for you home decoration with us, and we will make it happen.
 				</div>
 
-				<CustomInput
-					placeholder='Search plant'
-					className='mx-auto 
-								 mt-80 lg:mt-0
+				<div>
+					<CustomInput
+						placeholder='Search plant'
+						className='mx-auto 
 								xl:w-1/5 lg:w-1/3
 								w-2/3'
-				>
-					<div
-						className='lg:w-14 lg:h-14
+					>
+						<div
+							className='lg:w-14 lg:h-14
 									w-12 h-12 
 									flex justify-center items-center'
-					>
-						<img
-							src={require('../../../assets/common/search-icon.png')}
-							alt='search'
-							className='lg:w-7 lg:h-7 w-6 h-6'
-						/>
-					</div>
-				</CustomInput>
+						>
+							<img
+								src={require('../../../assets/common/search-icon.png')}
+								alt='search'
+								className='lg:w-7 lg:h-7 w-6 h-6'
+							/>
+						</div>
+					</CustomInput>
+				</div>
 			</div>
 		</div>
 	)

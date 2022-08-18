@@ -16,7 +16,7 @@ const ExampleImage: FC<ExampleImageProps> = ({ image }) => {
 	return (
 		<div
 			className='bg-black lg:rounded-[52px] rounded-[30px] md:rounded-[47px] 
-					flex justify-center items-center cursor-pointer'
+					flex justify-center items-center cursor-pointer object-cover w-fit mx-auto'
 		>
 			<div
 				className='font-semibold lg:text-6xl text-3xl text-white 
