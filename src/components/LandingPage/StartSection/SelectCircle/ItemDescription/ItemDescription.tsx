@@ -13,10 +13,10 @@ const ItemDescription: FC<ItemDescriptionProps> = ({ price, name }) => {
 							absolute -bottom-3	 						
 							border border-white
 							rounded-lg
-							bg-white bg-opacity-20 backdrop-blur-sm '
+							bg-white bg-opacity-20 backdrop-blur-sm'
 			></div>
 			<div
-				className=' w-48 border rounded-3xl z-10
+				className='w-48 border rounded-3xl z-10
 						border-white
 						bg-white bg-opacity-20 backdrop-blur-sm
 						p-4

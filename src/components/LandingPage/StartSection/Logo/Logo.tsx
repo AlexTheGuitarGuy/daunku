@@ -1,28 +1,37 @@
 import { NavLink } from 'react-router-dom'
+import { useSelector } from 'react-redux'
+import { getIsMobile } from '../../../../redux/app-selector'
 
 const Logo = () => {
+	const isMobile = useSelector(getIsMobile)
+
 	return (
-		<span className='flex cursor-pointer ml-10'>
+		<span
+			className='flex justify-center lg:justify-beginning 
+						cursor-pointer lg:ml-10 -mt-3 lg:mt-0'
+		>
 			<img
 				src={require('../../../../assets/start-page/logo.png')}
 				alt='logo'
-				className='w-12 h-12'
+				className='lg:w-12 lg:h-12 w-16 h-16'
 			/>
 
-			<span
-				className='font-bold text-3xl
-						my-auto ml-2
-						transition-colors
-			            bg-clip-text
-			            fill-transparent
-			            font-inter
-
-						hover:text-transparent 
-						hover:bg-gradient-to-tr 
-						hover:from-teal-400 hover:to-blue-500'
-			>
-				<NavLink to='/'>Daunku</NavLink>
-			</span>
+			{!isMobile && (
+				<span
+					className='font-bold text-3xl
+									my-auto ml-2
+									transition-colors
+						            bg-clip-text
+						            fill-transparent
+						            font-inter
+			
+									hover:text-transparent 
+									hover:bg-gradient-to-tr 
+									hover:from-teal-400 hover:to-blue-500'
+				>
+					<NavLink to='/'>Daunku</NavLink>
+				</span>
+			)}
 		</span>
 	)
 }

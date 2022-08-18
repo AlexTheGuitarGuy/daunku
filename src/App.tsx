@@ -1,11 +1,23 @@
 import './App.css'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import { Navigate } from 'react-router'
+
+import { useDispatch } from 'react-redux'
+
+import useScreenSize from './hooks/useScreenSize'
+import { setIsMobile } from './redux/app-reducer'
 
 import LandingPage from './components/LandingPage/LandingPage'
 
 const App = () => {
+  const screenSize = useScreenSize()
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    dispatch(setIsMobile(screenSize.dynamicWidth < 1366 && true))
+  }, [screenSize.dynamicWidth, dispatch])
+
   return (
     <div
       className='

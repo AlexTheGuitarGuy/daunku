@@ -11,7 +11,8 @@ const CustomInput: FC<CustomInputProps> = ({ placeholder, children, className })
 	return (
 		<div className={cn('relative', className)}>
 			<input
-				className='px-8 py-6 
+				className='lg:px-8 lg:py-6
+						px-4 py-3
 						rounded-full 
 						border border-white 
 						bg-white bg-opacity-20 backdrop-blur-lg	
@@ -22,7 +23,10 @@ const CustomInput: FC<CustomInputProps> = ({ placeholder, children, className })
 				placeholder={placeholder}
 			/>
 			<div
-				className='absolute right-3 top-3 rounded-full 
+				className='absolute 
+							lg:right-3 lg:top-3
+							right-1 top-1
+							rounded-full 
 							bg-gradient-to-r from-teal-400 to-blue-500
 							text-center
 							cursor-pointer
