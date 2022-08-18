@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/daunku/static/css/main.5b9391a2.css",
+    "main.js": "/daunku/static/js/main.e9e8b28b.js",
+    "static/js/787.127580a5.chunk.js": "/daunku/static/js/787.127580a5.chunk.js",
+    "static/media/home-page-bg.png": "/daunku/static/media/home-page-bg.b9452ad6701cc88a0f64.png",
+    "static/media/home-page-bg-mobile.png": "/daunku/static/media/home-page-bg-mobile.384a41306e69238d2bda.png",
+    "static/media/bedroom.png": "/daunku/static/media/bedroom.820da35829c457a8bb8f.png",
+    "static/media/living-room.png": "/daunku/static/media/living-room.24b8a558667c867376f9.png",
+    "static/media/working-area.png": "/daunku/static/media/working-area.1cd1970866e2bf5e15a9.png",
+    "static/media/camille-plant.png": "/daunku/static/media/camille-plant.17683a06cd2258bd133c.png",
+    "static/media/peace-lily.png": "/daunku/static/media/peace-lily.721bfd94cbb97db1a7c8.png",
+    "static/media/snake-plant.png": "/daunku/static/media/snake-plant.552408b33cb781c0e41f.png",
+    "index.html": "/daunku/index.html",
+    "main.5b9391a2.css.map": "/daunku/static/css/main.5b9391a2.css.map",
+    "main.e9e8b28b.js.map": "/daunku/static/js/main.e9e8b28b.js.map",
+    "787.127580a5.chunk.js.map": "/daunku/static/js/787.127580a5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5b9391a2.css",
+    "static/js/main.e9e8b28b.js"
+  ]
+}
