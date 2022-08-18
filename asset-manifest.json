@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/daunku/static/css/main.94e0e718.css",
-    "main.js": "/daunku/static/js/main.648ec695.js",
+    "main.js": "/daunku/static/js/main.3092bc1d.js",
     "static/js/787.127580a5.chunk.js": "/daunku/static/js/787.127580a5.chunk.js",
     "static/media/home-page-bg.png": "/daunku/static/media/home-page-bg.b9452ad6701cc88a0f64.png",
     "static/media/home-page-bg-mobile.png": "/daunku/static/media/home-page-bg-mobile.384a41306e69238d2bda.png",
@@ -13,11 +13,11 @@
     "static/media/snake-plant.png": "/daunku/static/media/snake-plant.552408b33cb781c0e41f.png",
     "index.html": "/daunku/index.html",
     "main.94e0e718.css.map": "/daunku/static/css/main.94e0e718.css.map",
-    "main.648ec695.js.map": "/daunku/static/js/main.648ec695.js.map",
+    "main.3092bc1d.js.map": "/daunku/static/js/main.3092bc1d.js.map",
     "787.127580a5.chunk.js.map": "/daunku/static/js/787.127580a5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.94e0e718.css",
-    "static/js/main.648ec695.js"
+    "static/js/main.3092bc1d.js"
   ]
 }
