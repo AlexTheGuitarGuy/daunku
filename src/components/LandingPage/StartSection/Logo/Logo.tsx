@@ -7,7 +7,7 @@ const Logo = () => {
 
 	return (
 		<span
-			className='flex justify-center lg:justify-beginning 
+			className='flex justify-center lg:justify-start 
 						cursor-pointer lg:ml-10 -mt-3 lg:mt-0'
 		>
 			<img
@@ -18,7 +18,8 @@ const Logo = () => {
 
 			{!isMobile && (
 				<span
-					className='font-bold text-3xl
+					className='font-bold 
+									xl:text-4xl lg:text-2xl
 									my-auto ml-2
 									transition-colors
 						            bg-clip-text

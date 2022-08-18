@@ -28,7 +28,9 @@ const Navbar = () => {
 					className={cn(
 						`
 			            transition-colors
-			            text-2xl 
+			            xl:text-2xl
+			            sm:text-2xl
+			            lg:text-l 
 			            lg:bg-clip-text
 			            lg:fill-transparent
 			            text-center
@@ -95,7 +97,7 @@ const Navbar = () => {
 		<nav
 			className='flex flex-row
 			           justify-center align-center
-			           my-auto'
+			           my-auto lg:space-x-8'
 		>
 			{navElements}
 		</nav>

@@ -28,7 +28,13 @@ const Product: FC<ProductProps> = ({ name }) => {
 	}
 
 	return (
-		<div className='bg-blue-200 rounded-t-[50px] h-full lg:w-[330px] lg:ml-16'>
+		<div
+			className='bg-blue-200 rounded-t-[50px] h-full 
+		2xl:w-[330px] 2xl:h-[510px] 
+		xl:w-[280px] xl:h-[400px] 
+		lg:w-[200px] lg:h-[300px] 
+		lg:ml-16'
+		>
 			<img
 				src={require(`../../../../assets/products/${name}.png`)}
 				alt={name}
@@ -38,7 +44,7 @@ const Product: FC<ProductProps> = ({ name }) => {
 				className='bg-white flex flex-col justify-between
 			  p-10 rounded-t-[50px] h-3/4'
 			>
-				<div className='lg:text-3xl text-xl text-gray-900 font-semibold'>
+				<div className='xl:text-4xl lg:text-2xl text-xl text-gray-900 font-semibold'>
 					{speciesMap[name]}
 					<div className='flex mt-2'>
 						<span className='mr-1.5'>
@@ -59,7 +65,7 @@ const Product: FC<ProductProps> = ({ name }) => {
 					</div>
 				</div>
 				<div className='flex flex-col lg:flex-row lg:justify-between lg:items-end items-center'>
-					<div className='lg:text-3xl text-xl text-gray-900 my-auto'>$65.00</div>
+					<div className='xl:text-3xl text-xl text-gray-900 my-auto font-semibold'>$65.00</div>
 					<div
 						className={cn(
 							`rounded-full bg-gray-300 cursor-pointer 
@@ -77,7 +83,15 @@ const Product: FC<ProductProps> = ({ name }) => {
 						<img
 							src={require('../../../../assets/common/plus.png')}
 							alt='add to cart'
-							className={cn('w-14 h-14 transition-transform', { 'rotate-45': isItemAdded })}
+							className={cn(
+								`w-14 h-14 
+									lg:w-10 lg:h-10
+									xl:w-14 xl:h-14
+								transition-transform`,
+								{
+									'rotate-45': isItemAdded,
+								},
+							)}
 						/>
 					</div>
 				</div>

@@ -19,7 +19,8 @@ const CustomInput: FC<CustomInputProps> = ({ placeholder, children, className })
 						w-full
 						outline-0
 						transition
-						text-xl'
+						text-xl
+						placeholder-white'
 				placeholder={placeholder}
 			/>
 			<div

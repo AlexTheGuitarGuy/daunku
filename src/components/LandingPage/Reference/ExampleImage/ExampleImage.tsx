@@ -14,7 +14,10 @@ const ExampleImage: FC<ExampleImageProps> = ({ image }) => {
 	}
 
 	return (
-		<div className='bg-black lg:rounded-[52px] rounded-[30px] flex justify-center items-center cursor-pointer'>
+		<div
+			className='bg-black lg:rounded-[52px] rounded-[30px] md:rounded-[47px] 
+					flex justify-center items-center cursor-pointer'
+		>
 			<div
 				className='font-semibold lg:text-6xl text-3xl text-white 
 											absolute z-10 pointer-events-none'
@@ -25,7 +28,7 @@ const ExampleImage: FC<ExampleImageProps> = ({ image }) => {
 			<img
 				src={require(`../../../../assets/reference/${image}.png`)}
 				alt='living-room'
-				className='hover:opacity-70 transition-opacity z-20 hover:z-0'
+				className='hover:opacity-70 transition-opacity z-20 hover:z-0 lg:h-max lg:w-[730px]'
 			/>
 		</div>
 	)
