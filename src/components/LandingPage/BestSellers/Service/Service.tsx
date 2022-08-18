@@ -31,10 +31,14 @@ const Service: FC<ServiceProps> = ({ icon }) => {
 
 	return (
 		<div className='flex mx-auto'>
-			<img src={require(`../../../../assets/service-icons/${icon}.png`)} alt={text} />
+			<img
+				src={require(`../../../../assets/service-icons/${icon}.png`)}
+				alt={text}
+				className='lg:w-auto lg:h-auto w-14 h-14'
+			/>
 			<div className='my-auto ml-8 w-full'>
-				<div className='text-gray-900 text-3xl'>{text}</div>
-				<div className='text-gray-600 text-xl mt-2'>{description}</div>
+				<div className='text-gray-900 lg:text-3xl text-xl'>{text}</div>
+				<div className='text-gray-600 lg:text-xl text-l mt-2'>{description}</div>
 			</div>
 		</div>
 	)

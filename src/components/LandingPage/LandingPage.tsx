@@ -8,8 +8,8 @@ const LandingPage = () => {
 		<div className='relative w-full'>
 			<StartSection />
 			<BestSellers />
-			<Reference />
-			<Footer />
+			{/*			<Reference />
+			<Footer />*/}
 		</div>
 	)
 }

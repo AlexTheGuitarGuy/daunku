@@ -5,24 +5,32 @@ const BestSellers = () => {
 	return (
 		<div
 			className='w-full h-screen relative 
-						flex flex-col justify-between'
+						flex flex-col lg:justify-between'
 		>
-			<div className='grid grid-cols-3 pt-10'>
+			<div
+				className='lg:grid lg:grid-cols-3 
+							space-y-8
+							mx-auto
+							pt-10'
+			>
 				<Service icon='shipping' />
 				<Service icon='payment' />
 				<Service icon='customer-support' />
 			</div>
-			<div className='flex mx-80 mb-60'>
-				<div className='flex flex-col justify-center'>
-					<div className='text-6xl text-gray-900'>Best Seller Product</div>
-					<div className='text-2xl text-gray-700 flex mt-20'>
+			<div className='flex lg:flex-row flex-col lg:mx-80 lg:mb-60 mt-10'>
+				<div className='flex flex-col justify-center text-center'>
+					<div className='lg:text-6xl text-3xl text-gray-900'>Best Seller Product</div>
+					<div
+						className='lg:text-2xl text-xl text-gray-700 flex lg:mt-20 mt-8
+									flex justify-center'
+					>
 						See all collection
-						<span className='my-auto ml-6'>
+						<span className='my-auto lg:ml-6'>
 							<img src={require('../../../assets/common/arrow.png')} alt='arrow' />
 						</span>
 					</div>
 				</div>
-				<div className='flex'>
+				<div className='flex lg:mt-10 mt-20'>
 					<Product name='camille-plant' />
 					<Product name='peace-lily' />
 					<Product name='snake-plant' />

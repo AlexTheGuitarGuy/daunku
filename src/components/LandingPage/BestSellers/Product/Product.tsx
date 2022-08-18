@@ -28,17 +28,17 @@ const Product: FC<ProductProps> = ({ name }) => {
 	}
 
 	return (
-		<div className='bg-blue-200 rounded-t-[50px] h-full w-[330px] ml-16'>
+		<div className='bg-blue-200 rounded-t-[50px] h-full lg:w-[330px] lg:ml-16'>
 			<img
 				src={require(`../../../../assets/products/${name}.png`)}
 				alt={name}
-				className='-mt-36 mb-10'
+				className='lg:-mt-36 lg:mb-10 -mt-20 mb-6'
 			/>
 			<div
 				className='bg-white flex flex-col justify-between
 			  p-10 rounded-t-[50px] h-3/4'
 			>
-				<div className='text-3xl text-gray-900 font-semibold'>
+				<div className='lg:text-3xl text-xl text-gray-900 font-semibold'>
 					{speciesMap[name]}
 					<div className='flex mt-2'>
 						<span className='mr-1.5'>
@@ -58,8 +58,8 @@ const Product: FC<ProductProps> = ({ name }) => {
 						</span>
 					</div>
 				</div>
-				<div className='flex justify-between items-end'>
-					<div className='text-3xl text-gray-900 my-auto'>$65.00</div>
+				<div className='flex flex-col lg:flex-row lg:justify-between lg:items-end items-center'>
+					<div className='lg:text-3xl text-xl text-gray-900 my-auto'>$65.00</div>
 					<div
 						className={cn(
 							`rounded-full bg-gray-300 cursor-pointer 

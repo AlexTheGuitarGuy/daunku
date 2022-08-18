@@ -23,8 +23,8 @@ const ItemDescription: FC<ItemDescriptionProps> = ({ price, name }) => {
 						'
 			>
 				<div className='font-bold mx-2'>
-					<div className='text-3xl'>{price}</div>
-					<div className='mt-3'>{name}</div>
+					<div className='lg:text-3xl text-xl'>{price}</div>
+					<div className='mt-3 text-m'>{name}</div>
 				</div>
 			</div>
 		</div>

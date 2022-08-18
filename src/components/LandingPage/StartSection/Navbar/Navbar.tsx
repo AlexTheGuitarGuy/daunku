@@ -55,7 +55,7 @@ const Navbar = () => {
 				<button
 					onClick={() => setShouldShowMenu(!shouldShowMenu)}
 					className={cn(
-						`rounded-tr-xl p-2 -mt-[11px] bg-white 
+						`rounded-tr-xl p-2 -mt-[15px] bg-white 
 						bg-opacity-20 backdrop-blur-sm transition-opacity`,
 						{ 'bg-opacity-0': !shouldShowMenu },
 						{ 'bg-opacity-20': shouldShowMenu },
