@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/daunku/static/css/main.5ec84d1e.css",
-    "main.js": "/daunku/static/js/main.65340d33.js",
+    "main.css": "/daunku/static/css/main.1941072c.css",
+    "main.js": "/daunku/static/js/main.5d2c98a5.js",
     "static/js/787.127580a5.chunk.js": "/daunku/static/js/787.127580a5.chunk.js",
     "static/media/home-page-bg.png": "/daunku/static/media/home-page-bg.b9452ad6701cc88a0f64.png",
     "static/media/home-page-bg-mobile.png": "/daunku/static/media/home-page-bg-mobile.384a41306e69238d2bda.png",
@@ -12,12 +12,12 @@
     "static/media/peace-lily.png": "/daunku/static/media/peace-lily.721bfd94cbb97db1a7c8.png",
     "static/media/snake-plant.png": "/daunku/static/media/snake-plant.552408b33cb781c0e41f.png",
     "index.html": "/daunku/index.html",
-    "main.5ec84d1e.css.map": "/daunku/static/css/main.5ec84d1e.css.map",
-    "main.65340d33.js.map": "/daunku/static/js/main.65340d33.js.map",
+    "main.1941072c.css.map": "/daunku/static/css/main.1941072c.css.map",
+    "main.5d2c98a5.js.map": "/daunku/static/js/main.5d2c98a5.js.map",
     "787.127580a5.chunk.js.map": "/daunku/static/js/787.127580a5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ec84d1e.css",
-    "static/js/main.65340d33.js"
+    "static/css/main.1941072c.css",
+    "static/js/main.5d2c98a5.js"
   ]
 }
