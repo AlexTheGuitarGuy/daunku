@@ -1,11 +1,12 @@
+import { useSelector } from 'react-redux'
+
+import { getIsMobile } from '../../../redux/app-selector'
+import CustomInput from '../../common/CustomInput/CustomInput'
+import Background from './Background/Background'
 import Logo from './Logo/Logo'
 import Navbar from './Navbar/Navbar'
-import ShoppingButton from './ShoppingButton/ShoppingButton'
-import Background from './Background/Background'
 import SelectCircle from './SelectCircle/SelectCircle'
-import CustomInput from '../../common/CustomInput/CustomInput'
-import { useSelector } from 'react-redux'
-import { getIsMobile } from '../../../redux/app-selector'
+import ShoppingButton from './ShoppingButton/ShoppingButton'
 
 const StartScreen = () => {
 	const isMobile = useSelector(getIsMobile)

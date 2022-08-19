@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import { useSelector } from 'react-redux'
+
 import { getIsMobile } from '../../../../redux/app-selector'
 
 const Logo = () => {

@@ -1,8 +1,10 @@
-import cn from 'classnames'
 import { FC } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+
+import cn from 'classnames'
+
+import { addToCart, removeFromCart } from '../../../../redux/shopping-cart-reducer'
 import { getCartItems } from '../../../../redux/shopping-cart-selector'
-import { removeFromCart, addToCart } from '../../../../redux/shopping-cart-reducer'
 
 type Species = 'camille-plant' | 'peace-lily' | 'snake-plant'
 

@@ -1,4 +1,4 @@
-import { FC, ReactNode, useState } from 'react'
+import { useState, FC, ReactNode } from 'react'
 
 type ProductCarouselProps = {
 	children: ReactNode[]

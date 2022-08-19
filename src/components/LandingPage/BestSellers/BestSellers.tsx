@@ -1,9 +1,9 @@
 import { useSelector } from 'react-redux'
 
-import Service from './Service/Service'
-import Product from './Product/Product'
 import { getIsMobile } from '../../../redux/app-selector'
+import Product from './Product/Product'
 import ProductCarousel from './ProductCarousel/ProductCarousel'
+import Service from './Service/Service'
 
 const BestSellers = () => {
 	const isMobile = useSelector(getIsMobile)

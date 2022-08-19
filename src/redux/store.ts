@@ -1,8 +1,9 @@
 import { applyMiddleware, combineReducers, compose, createStore } from 'redux'
-import thunkMiddleware from 'redux-thunk'
 import navbarReducer from './navbar-reducer'
-import shoppingCartReducer from './shopping-cart-reducer'
+import thunkMiddleware from 'redux-thunk'
+
 import appReducer from './app-reducer'
+import shoppingCartReducer from './shopping-cart-reducer'
 
 const reducers = combineReducers({
   navbar: navbarReducer,

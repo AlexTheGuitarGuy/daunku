@@ -1,13 +1,14 @@
+import { useState, RefObject } from 'react'
 import { useSelector } from 'react-redux'
 import { useLocation } from 'react-router'
 import { NavLink } from 'react-router-dom'
+
 import cn from 'classnames'
 
+import useTagBlur from '../../../../hooks/useTagBlur'
 import { getIsMobile } from '../../../../redux/app-selector'
 import { getNavItems } from '../../../../redux/navbar-selector'
 import { NavItem } from '../../../../types/types.d'
-import { RefObject, useState } from 'react'
-import useTagBlur from '../../../../hooks/useTagBlur'
 
 const Navbar = () => {
 	const [shouldShowMenu, setShouldShowMenu] = useState(false)

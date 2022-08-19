@@ -1,7 +1,7 @@
-import StartSection from './StartSection/StartSection'
 import BestSellers from './BestSellers/BestSellers'
-import Reference from './Reference/Reference'
 import Footer from './Footer/Footer'
+import StartSection from './StartSection/StartSection'
+import Reference from './Reference/Reference'
 
 const LandingPage = () => {
 	return (

@@ -1,5 +1,6 @@
-import { getIsMobile } from '../../../../redux/app-selector'
 import { useSelector } from 'react-redux'
+
+import { getIsMobile } from '../../../../redux/app-selector'
 
 const Background = () => {
 	const isMobile = useSelector(getIsMobile)

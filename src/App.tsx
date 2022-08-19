@@ -1,14 +1,12 @@
-import './App.css'
 import React, { useEffect } from 'react'
-import { Route, Routes } from 'react-router-dom'
-import { Navigate } from 'react-router'
-
 import { useDispatch } from 'react-redux'
+import { Navigate } from 'react-router'
+import { Route, Routes } from 'react-router-dom'
 
+import './App.css'
+import LandingPage from './components/LandingPage/LandingPage'
 import useScreenSize from './hooks/useScreenSize'
 import { setIsMobile } from './redux/app-reducer'
-
-import LandingPage from './components/LandingPage/LandingPage'
 
 const App = () => {
   const screenSize = useScreenSize()
