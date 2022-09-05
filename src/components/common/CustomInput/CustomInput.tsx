@@ -10,7 +10,7 @@ type CustomInputProps = {
 
 const CustomInput: FC<CustomInputProps> = ({ placeholder, children, className }) => {
 	return (
-		<div className={cn('relative', className)}>
+		<form className={cn('relative', className)}>
 			<input
 				className='lg:px-8 lg:py-6
 						px-4 py-3
@@ -36,7 +36,7 @@ const CustomInput: FC<CustomInputProps> = ({ placeholder, children, className })
 			>
 				{children}
 			</div>
-		</div>
+		</form>
 	)
 }
 

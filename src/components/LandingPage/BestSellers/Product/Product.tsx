@@ -30,7 +30,7 @@ const Product: FC<ProductProps> = ({ name }) => {
 	}
 
 	return (
-		<div
+		<article
 			className='bg-blue-200 rounded-t-[50px] 
 											md:h-auto 
 											md:w-60 lg:w-auto 
@@ -46,7 +46,7 @@ const Product: FC<ProductProps> = ({ name }) => {
 			  p-10 rounded-t-[50px] lg:h-80 h-72'
 			>
 				<div className='xl:text-4xl lg:text-2xl text-xl text-gray-900 font-semibold lg:items-end items-center'>
-					<div className='lg:h-12'>{speciesMap[name]}</div>
+					<h3 className='lg:h-12'>{speciesMap[name]}</h3>
 					<div className='flex mt-2'>
 						<span className='mr-1.5'>
 							<img src={require('../../../../assets/common/rating-star.png')} alt='star' />
@@ -97,7 +97,7 @@ const Product: FC<ProductProps> = ({ name }) => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</article>
 	)
 }
 

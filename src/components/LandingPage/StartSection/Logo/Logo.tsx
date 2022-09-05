@@ -31,7 +31,9 @@ const Logo = () => {
 									hover:bg-gradient-to-tr 
 									hover:from-teal-400 hover:to-blue-500'
 				>
-					<NavLink to='/'>Daunku</NavLink>
+					<NavLink to='/'>
+						<h1>Daunku</h1>
+					</NavLink>
 				</span>
 			)}
 		</span>

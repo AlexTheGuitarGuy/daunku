@@ -25,7 +25,7 @@ const Navbar = () => {
 		if (location.pathname.match(element.to)) isActive = true
 		return (
 			<NavLink key={element.id} to={element.to}>
-				<div
+				<li
 					className={cn(
 						`
 			            transition-colors
@@ -46,8 +46,8 @@ const Navbar = () => {
 						},
 					)}
 				>
-					{element.text}
-				</div>
+					<h2>{element.text}</h2>
+				</li>
 			</NavLink>
 		)
 	})
@@ -72,7 +72,7 @@ const Navbar = () => {
 				</button>
 
 				<nav>
-					<div
+					<ul
 						className={cn(
 							`fixed left-0 top-20
 		                	flex flex-col justify-center
@@ -86,21 +86,23 @@ const Navbar = () => {
 							{ 'opacity-0 pointer-events-none': !shouldShowMenu },
 							{ 'opacity-100': shouldShowMenu },
 						)}
-						ref={menuRef as RefObject<HTMLDivElement>}
+						ref={menuRef as RefObject<HTMLUListElement>}
 					>
 						{navElements}
-					</div>
+					</ul>
 				</nav>
 			</div>
 		)
 
 	return (
-		<nav
-			className='flex flex-row
+		<nav>
+			<ul
+				className='flex flex-row
 			           justify-center align-center
 			           my-auto lg:space-x-8'
-		>
-			{navElements}
+			>
+				{navElements}
+			</ul>
 		</nav>
 	)
 }

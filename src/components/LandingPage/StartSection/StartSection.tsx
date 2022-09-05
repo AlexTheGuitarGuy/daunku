@@ -1,50 +1,22 @@
-import { useSelector } from 'react-redux'
-
-import { getIsMobile } from '../../../redux/app-selector'
 import CustomInput from '../../common/CustomInput/CustomInput'
 import Background from './Background/Background'
 import Logo from './Logo/Logo'
 import Navbar from './Navbar/Navbar'
-import SelectCircle from './SelectCircle/SelectCircle'
 import ShoppingButton from './ShoppingButton/ShoppingButton'
 
 const StartScreen = () => {
-	const isMobile = useSelector(getIsMobile)
-
 	return (
-		<div className='w-full h-screen relative text-white'>
+		<header
+			className='w-full 
+							2xl:h-[1440px] 
+							xl:h-[1080px]
+							h-[768px]
+							relative text-white'
+		>
 			<Background />
-			{!isMobile && (
-				<>
-					<div
-						className='absolute z-30
-						lg:bottom-[250px]  lg:left-40
-						xl:bottom-[400px]
-						2xl:bottom-[550px] 2xl:left-64'
-					>
-						<SelectCircle />
-					</div>
-					<div
-						className='absolute z-30 
-					lg:bottom-[350px]  lg:left-20
-					xl:bottom-[480px]
-					2xl:bottom-[800px] 2xl:left-40'
-					>
-						<SelectCircle />
-					</div>
-
-					<div
-						className='absolute z-30 
-			2xl:bottom-[450px] 2xl:right-[175px]
-			lg:bottom-[275px] lg:right-[80px]'
-					>
-						<SelectCircle price={'$65.00'} name='Dracena Fragnas' />
-					</div>
-				</>
-			)}
 
 			<div className='relative z-40 w-full xl:space-y-24 sm:space-y-24 lg:space-y-10'>
-				<header className='pt-10 grid grid-cols-3'>
+				<section className='pt-10 grid grid-cols-3'>
 					<span className='order-2 lg:order-1'>
 						<Logo />
 					</span>
@@ -54,8 +26,8 @@ const StartScreen = () => {
 					<span className='order-3 lg:order-3'>
 						<ShoppingButton />
 					</span>
-				</header>
-				<div
+				</section>
+				<h2
 					className='mx-auto text-center 
 						font-bold 
 						xl:text-8xl
@@ -66,8 +38,8 @@ const StartScreen = () => {
 						leading-10'
 				>
 					Bring Serenity to Your Place With Interior Plants
-				</div>
-				<div
+				</h2>
+				<p
 					className='lg:mx-auto text-center 
 						text-xl xl:text-3xl
 						mx-10
@@ -75,7 +47,7 @@ const StartScreen = () => {
 						leading-6'
 				>
 					find your dream plant for you home decoration with us, and we will make it happen.
-				</div>
+				</p>
 
 				<div>
 					<CustomInput
@@ -84,7 +56,7 @@ const StartScreen = () => {
 								xl:w-1/5 lg:w-1/3
 								w-2/3'
 					>
-						<div
+						<button
 							className='lg:w-14 lg:h-14
 									w-12 h-12 
 									flex justify-center items-center'
@@ -94,11 +66,11 @@ const StartScreen = () => {
 								alt='search'
 								className='lg:w-7 lg:h-7 w-6 h-6'
 							/>
-						</div>
+						</button>
 					</CustomInput>
 				</div>
 			</div>
-		</div>
+		</header>
 	)
 }
 

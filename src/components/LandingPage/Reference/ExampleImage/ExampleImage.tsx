@@ -18,12 +18,12 @@ const ExampleImage: FC<ExampleImageProps> = ({ image }) => {
 			className='bg-black lg:rounded-[52px] rounded-[30px] md:rounded-[47px] 
 					flex justify-center items-center cursor-pointer object-cover w-fit mx-auto'
 		>
-			<div
+			<h1
 				className='font-semibold lg:text-6xl text-3xl text-white 
 											absolute z-10 pointer-events-none'
 			>
 				{imageMap[image]}
-			</div>
+			</h1>
 
 			<img
 				src={require(`../../../../assets/reference/${image}.png`)}

@@ -37,8 +37,8 @@ const Service: FC<ServiceProps> = ({ icon }) => {
 				className='xl:w-max xl:h-max w-14 h-14 lg:my-auto'
 			/>
 			<div className='my-auto ml-8 w-full'>
-				<div className='text-gray-900 xl:text-3xl text-xl'>{text}</div>
-				<div className='text-gray-600 xl:text-xl text-l mt-2'>{description}</div>
+				<h3 className='text-gray-900 xl:text-3xl text-xl'>{text}</h3>
+				<h4 className='text-gray-600 xl:text-xl text-l mt-2'>{description}</h4>
 			</div>
 		</div>
 	)
