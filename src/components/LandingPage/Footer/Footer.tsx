@@ -5,7 +5,8 @@ const Footer = () => {
 	return (
 		<section
 			className='bg-gradient-to-r from-slate-500 to-slate-800 text-white 
-						md:px-24 py-32'
+						md:px-24 py-32 
+						snap-start'
 		>
 			<section
 				className='flex flex-col lg:flex-row lg:items-end lg:justify-between 

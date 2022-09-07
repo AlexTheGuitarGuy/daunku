@@ -7,11 +7,12 @@ import ShoppingButton from './ShoppingButton/ShoppingButton'
 const StartScreen = () => {
 	return (
 		<header
-			className='w-full 
-							2xl:h-[1440px] 
-							xl:h-[1080px]
-							h-[768px]
-							relative text-white'
+			className='w-full
+						snap-start
+						2xl:h-[1440px] 
+						xl:h-[1080px]
+						h-[768px]
+						relative text-white'
 		>
 			<Background />
 

@@ -2,7 +2,7 @@ import ExampleImage from './ExampleImage/ExampleImage'
 
 const Reference = () => {
 	return (
-		<section className='w-full h-max lg:mt-0 mt-32'>
+		<section className='w-full h-max lg:mt-0 mt-32 snap-start'>
 			<header className='flex flex-col justify-center lg:pt-10'>
 				<h2 className='xl:text-6xl lg:text-4xl text-3xl text-gray-900 font-semibold mx-auto'>
 					Interior Plant Reference

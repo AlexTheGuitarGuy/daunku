@@ -25,7 +25,8 @@ const BestSellers = () => {
 
 	return (
 		<section
-			className='w-full h-fit relative 
+			className='w-full h-fit relative
+						snap-start
 						flex flex-col justify-around lg:justify-between 2xl:justify-around
 						lg:space-y-60'
 		>

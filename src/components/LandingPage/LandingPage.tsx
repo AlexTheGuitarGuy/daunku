@@ -5,7 +5,7 @@ import Reference from './Reference/Reference'
 
 const LandingPage = () => {
 	return (
-		<div className='relative w-full'>
+		<div className='relative w-full h-screen snap-y overflow-y-scroll'>
 			<StartSection />
 			<BestSellers />
 			<Reference />
