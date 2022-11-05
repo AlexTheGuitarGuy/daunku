@@ -1,0 +1,4 @@
+make inputs into forms 
+make thunks for submission
+make animations for scrolling
+make go back to the top button
